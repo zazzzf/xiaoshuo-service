@@ -1,0 +1,18 @@
+{% set activePage = 'home' %}
+{% extends "base.nj" %}
+
+{% block css %}
+  <link href="/public/css/markdown-style.css?v=0.1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github-gist.min.css" integrity="sha256-xKngFRXh54wtbQtuYDjv4R5dJSjZAjRiq5u0dlUxAM0=" crossorigin="anonymous" />
+{% endblock %}
+
+{% block content %}
+  <div id="content" class="markdown-body"> </div>
+{% endblock %}
+
+{% block script %}
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+  <script src="/public/js/view.js"></script>
+{% endblock %}
+  
